@@ -45,6 +45,10 @@
 
    git checkout -- XX  把XX文件在工作区的修改全部撤销。
 
+​		一种是`readme.txt`自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
+
+​		一种是`readme.txt`已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
+
    git rm XX          删除XX文件
 
    git remote add origin https://github.com/tugenhua0707/testgit 关联一个远程库
@@ -78,6 +82,10 @@
    git remote 查看远程库的信息
 
    git remote –v 查看远程库的详细信息
+
+   git restore --staged XXX  把XX文件提交到暂存区的修改撤销，但工作区内XX文件的修改仍在
+
+   git restore XXX      丢弃XXX在工作区的修改
 
    git push origin master  Git会把master分支推送到远程库对应的远程分支上
 
