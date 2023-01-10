@@ -31,6 +31,8 @@
 
    git diff  XX      查看XX文件修改了那些内容
 
+   git diff HEAD -- readme.txt      命令可以查看工作区和版本库里面最新版本的区别：
+
    git log          查看历史记录
 
    git reset  --hard HEAD^ 或者 git reset  --hard HEAD~ 回退到上一个版本
