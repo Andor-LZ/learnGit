@@ -105,6 +105,28 @@
 
    二、分支跳转完成后后，工作区目录会恢复到当前分支最近一次提交下的目录情况，即不同分支底下的目录内容即便存在差异，也不会互相干扰泾渭分明。
 
-   例：dev下修改了test.txt文件提交到dev分支（不提交会出现修改差异无法跳转），dev跳转到master之后，工作区目录会恢复到master最近一次提交下的情况，此时查阅test,txt文件并不会看到在dev分支下的修改。
+   例：dev下修改了test.txt文件提交到dev分支（不提交会出现修改差异无法跳转），dev跳转到master之后，工作区目录会恢复到master最近一次提交下的情况，此时查阅test,txt文件并不会看到在dev分支下的修改
+
+4. 使用git merge feature1时，如果有冲突内容，则会进入master|MERGING状态，此时查看readme.txt就会发现把master和branch冲突信息同时标注出来，
+
+   > Git is a distributed version control system.
+   > Git is free software distributed under the GPL.
+   > Git tracks changes of files.
+   > <<<<<<< HEAD
+   >
+   > Creating a new branch is quick & simple.
+   >
+   > \=\=\=\=\=\=\=
+   >
+   > Creating a new branch is quick AND simple.
+   > >>>>>>> feature1
+
+5. 
+
+6. 
+
+   
+
+   
 
    
